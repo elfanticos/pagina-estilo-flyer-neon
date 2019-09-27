@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Efecto Texto Neon</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="contenido-encabezado" id="contenido-encabezado">
+        <div class="text-encabezado">
+            <p class="icono">
+                <i class="fas fa-glass-cheers"></i>
+            </p>
+            <h1 class="titulo">
+                Bohemiam Bar<br>!Entra<br>
+                <span class="titulo-naranja-neon texto-regular">50% de Descuento</span>
+            </h1>
+            <p class="descripcion">
+                Tenemos nueva sucursal<br>
+                Por apertura, todas nuestras bebidas a mitad<br>
+                de precio en Av Lorem 28-B, Col. Centro, Impum
+            </p>
+            <a href="#" class="btn-link texto-regular">Más Información</a>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor">
+            <h2 class="subtitulo-h2">Servicios</h2>
+            <p><span class="letra-capital">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Magnam solut
+                a eaque saepe dolores tempore asperiores quae? Nisi sit ipsa aliquam cupiditate,
+                quos nulla fugiat repellendus assumenda sequi doloremque, quia itaque.</p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut incidunt doloribus
+                     placeat ipsa neque labore quasi blanditiis ad? Neque similique adipisci tempora
+                      nam facilis odit, nobis nulla voluptatibus sint consequuntur?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reiciendis dolor 
+                    pariatur odit commodi soluta non quia, nobis molestiae. Modi, error molestiae animi
+                     eum adipisci qui voluptates veritatis laborum nam!</p>
+        </section>
+    </main>
+    <!-- JAVASCRIPT -->
+    <script src="https://kit.fontawesome.com/8c584dd99f.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('contenido-encabezado');
+            header.style.opacity = '1' - window.pageYOffset /650;
+        });
+    </script>
+</body>
+
+</html>
